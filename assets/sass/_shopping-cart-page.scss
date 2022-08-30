@@ -1,0 +1,31 @@
+// shopping page style start
+html {
+    body {
+        .shopping-page {
+            // shopping table section start
+            .shopping-table {
+                .column-names {
+                    font-size: .6rem;
+                    text-transform: uppercase;
+                    border-bottom: 1px solid $text-color;
+                }
+                .sub-title {
+                    padding: 0 !important;
+                    line-height: 1;
+                }
+                .total-payment {
+                    width: 17rem;
+                    font-size: 2rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                }
+                i {
+                    font-size: 1.5rem;
+                    color: $decoration-color !important;
+                }
+            }
+            // shopping table section end
+        }
+    }
+}
+// shopping page style end

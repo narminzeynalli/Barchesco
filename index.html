@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon of page -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="assets/sass/bootstrap.min.css">
+    
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/sass/style.css">
+
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+    <!-- title -->
+    <title>Barchesco</title>
+</head>
+<body>
+
+    <!-- main page start -->
+    <div class="main-page">
+
+        <!-- header start -->
+        <header class="header d-flex align-items-center justify-content-center">
+            <div class="container">
+                <nav class="navbar d-flex align-items-center justify-content-between">
+                    <div class="logo">
+                        <a href="#">barchesco</a>
+                    </div>
+                    <ul class="menu d-flex align-items-center justify-content-around">
+                        <li class="menu-item"><a href="#story-section" class="link">about</a></li>
+                        <li class="menu-item"><a href="catalog-page.html" class="link">catalog</a></li>
+                        <li class="menu-item"><a href="#collections-section" class="link">collections</a></li>
+                        <li class="menu-item"><a href="payment-page.html" class="link">sales</a></li>
+                    </ul>
+                    <ul class="icons d-flex align-items-center justify-content-between">
+                        <li class="icon-item"><a href="#" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li class="icon-item"><a href="shopping-cart-page.html" class="icon"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        <li class="icon-item menu-bar d-none"><a href="#" class="icon"><i class="fa-solid fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="searchbar d-flex align-items-center justify-content-center">
+                    <input type="search" placeholder="Search" class="" id="search-input">
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+
+        <!-- banner section start -->
+        <section class="banner-section section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-12 order-2 order-lg-1">
+                        <div class="heading d-flex align-items-start justify-content-center flex-column py-5" >
+                            <h1 class="py-5">Hand made ceramics <span class="italic-text">for</span> your home</h1>
+                            <a href="catalog-page.html" class="button">shop now<span>⟶</span></a>                       
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-12 order-1 order-lg-2">
+                        <div class="banner-img">
+                            <img src="assets/img/banner-img.png" alt="banner image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner section end -->
+
+
+        <!-- story section start -->
+        <section class="story-section section-padding" id="story-section">
+            <div class="container">
+                <div class="section-title">
+                    <h1 class="title">Our story</h1>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12 order-2 order-lg-1">
+                        <div class="story-columns d-flex align-items-center flex-column">
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur numquam ipsa aut nam nisi exercitationem sit voluptatum aspernatur, aliquid eaque atque sapiente laborum debitis provident animi magni nesciunt! Similique amet a doloremque maxime laudantium minus necessitatibus obcaecati iusto illo? Esse ducimus laudantium mollitia accusantium perspiciatis.</p>
+                            <img src="assets/img/story-section-img-1.jpg" alt="story section img">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 order-1 order-lg-2">
+                        <div class="story-columns d-flex align-items-center flex-column">
+                            <img src="assets/img/story-section-img-2.jpg" alt="story section img">
+                            <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis officia cumque eum laborum vero esse corrupti magni, possimus maxime veniam error et vel sunt voluptas est nisi? Cumque doloremque pariatur dolor sequi hic, officiis ullam architecto consequuntur neque? Vel at doloremque, inventore repellendus perferendis id?</p>
+                            <p class="italic-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio reiciendis totam animi nostrum itaque nemo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- story section end -->
+
+
+        <!-- collections section start -->
+        <section class="collections-section section-padding" id="collections-section">
+            <div class="container">
+                <div class="section-title">
+                    <h1 class="title">Collections</h1>
+                </div>
+                <!-- collection slider start -->
+                <div class="swiper collection-slider">
+                    <div class="swiper-wrapper slides">
+                        <div class="swiper-slide slide">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-12 col-lg-6 order-2 order-lg-1 slide-text d-flex flex-column align-items-end justify-content-between">
+                                    <div class="column d-flex flex-column align-items-start justify-content-between">
+                                        <h2 class="sub-title">Barchesco Collection</h2>
+                                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quis saepe vitae. Obcaecati cumque voluptatibus dicta quae magnam perferendis mollitia aut enim. Atque, dolorum quae.</p>
+                                        <a href="shopping-cart-page.html" class="button">add to cart<span>⟶</span></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 order-1 order-lg-2 slide-img ps-5">
+                                    <div class="column">
+                                        <img src="assets/img/collection-section-img-2.jpg" alt="collection image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-12 col-lg-6 order-2 order-lg-1 slide-text d-flex flex-column align-items-end justify-content-between">
+                                    <div class="column d-flex flex-column align-items-start justify-content-between">
+                                        <h2 class="sub-title">Barchesco Collection</h2>
+                                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quis saepe vitae. Obcaecati cumque voluptatibus dicta quae magnam perferendis mollitia aut enim. Atque, dolorum quae.</p>
+                                        <a href="shopping-cart-page.html" class="button">add to cart<span>⟶</span></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 order-1 order-lg-2 slide-img ps-5">
+                                    <div class="column">
+                                        <img src="assets/img/collection-section-img-1.jpg" alt="collection image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-12 col-lg-6 order-2 order-lg-1 slide-text d-flex flex-column align-items-end justify-content-between">
+                                    <div class="column d-flex flex-column align-items-start justify-content-between">
+                                        <h2 class="sub-title">Barchesco Collection</h2>
+                                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quis saepe vitae. Obcaecati cumque voluptatibus dicta quae magnam perferendis mollitia aut enim. Atque, dolorum quae.</p>
+                                        <a href="shopping-cart-page.html" class="button">add to cart<span>⟶</span></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 order-1 order-lg-2 slide-img ps-5">
+                                    <div class="column">
+                                        <img src="assets/img/collection-section-img-3.jpg" alt="collection image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <div class="row d-flex align-items-center justify-content-center">
+                                <div class="col-12 col-lg-6 order-2 order-lg-1 slide-text d-flex flex-column align-items-end justify-content-between">
+                                    <div class="column d-flex flex-column align-items-start justify-content-between">
+                                        <h2 class="sub-title">Barchesco Collection</h2>
+                                        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quis saepe vitae. Obcaecati cumque voluptatibus dicta quae magnam perferendis mollitia aut enim. Atque, dolorum quae.</p>
+                                        <a href="shopping-cart-page.html" class="button">add to cart<span>⟶</span></a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-6 order-1 order-lg-2 slide-img ps-5">
+                                    <div class="column">
+                                        <img src="assets/img/collection-section-img-4.jpg" alt="collection image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next slide-button">⟶</div>
+                    <div class="swiper-button-prev slide-button">⟵</div>
+                </div>
+                <!-- collection slider end -->
+            </div>
+        </section>
+        <!-- collections section end -->
+
+
+        <!-- sign-up section start -->
+        <section class="sign-up-section section-padding">
+            <div class="container d-flex align-items-center justify-content-between flex-column">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="sign-up-image">
+                            <img src="assets/img/sign-up-section-img.png" alt="sign-up section img">
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center justify-content-center">
+                    <div class="col-10">
+                        <h2 class="sub-title text-center">Sign Up for our mailer to receive exclusive offers</h2>
+                    </div>
+                </div>
+            <div class="row">
+                    <form action="" class="col-12 d-flex align-items-center justify-content-between">
+                        <input type="email" name="" id="" placeholder="Email" class="input">
+                        <a href="#" class="button">subscribe<span>⟶</span></a>
+                    </form>
+            </div>
+            </div>
+        </section>
+        <!-- sign-up section end -->
+
+
+        <!-- footer start -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-md-3 col-6 d-flex justify-content-center">
+                        <div class="logo">
+                            <a href="#">barchesco</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 d-flex justify-content-center">
+                        <div class="links">
+                            <h3 class="links-title">navigation</h3>
+                            <ul>
+                                <li><a href="#story-section" class="link">About</a></li>
+                                <li><a href="catalog-page.html" class="link">Catalog</a></li>
+                                <li><a href="#collections-section" class="link">Collections</a></li>
+                                <li><a href="payment-page.html" class="link">Sales</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 d-flex justify-content-center">
+                        <div class="links">
+                            <h3 class="links-title">customer service</h3>
+                            <ul>
+                                <li><a href="#" class="link">Contact us</a></li>
+                                <li><a href="shipping-page.html" class="link">Shipping</a></li>
+                                <li><a href="#" class="link">Return policy</a></li>
+                                <li><a href="#" class="link">Product care</a></li>
+                            </ul> 
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-6 d-flex justify-content-center">
+                        <div class="links">
+                            <h3 class="links-title">social</h3>
+                            <ul>
+                                <li><a href="#" class="link">Instagram</a></li>
+                                <li><a href="#" class="link">Facebook</a></li>
+                                <li><a href="#" class="link">Twitter</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer end -->
+
+    </div>
+    <!-- main page end -->
+
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- js links -->
+    <script src="assets/js/jquery.min.js" ></script>
+    <script src="assets/js/script.js" ></script>
+</body>
+</html>

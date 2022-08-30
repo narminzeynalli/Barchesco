@@ -1,0 +1,38 @@
+// product card page style start
+html {
+    body {
+        .product-card-page {
+            // product details section start
+            .product-details-section {
+                .image {
+                    img {
+                        width: 25rem;
+                        height: 25rem;
+                    }
+                }
+            }
+            // product details section end
+            
+            // offers section start
+            .offers-section {
+                .product-slider {
+                    .slides {
+                        .slide {
+                            .product-card {
+                                img {
+                                    width: 15rem;
+                                    height: 15rem;
+                                }
+                                .price {
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            // offers section end
+        }
+    }
+}
+// product card page style start

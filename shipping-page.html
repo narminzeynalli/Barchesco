@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon of page -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="assets/sass/bootstrap.min.css">
+    
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/sass/style.css">
+    
+    <!-- title -->
+    <title>Barchesco</title>
+</head>
+<body>
+
+    <!-- shipping page start -->
+    <div class="shipping-page">
+
+        <!-- header start -->
+        <header class="header d-flex align-items-center justify-content-center">
+            <div class="container">
+                <nav class="navbar d-flex align-items-center justify-content-between">
+                    <div class="logo">
+                        <a href="#">barchesco</a>
+                    </div>
+                    <ul class="menu d-flex align-items-center justify-content-around">
+                        <li class="menu-item"><a href="index.html" class="link">about</a></li>
+                        <li class="menu-item"><a href="catalog-page.html" class="link">catalog</a></li>
+                        <li class="menu-item"><a href="index.html" class="link">collections</a></li>
+                        <li class="menu-item"><a href="#" class="link">sales</a></li>
+                    </ul>
+                    <ul class="icons d-flex align-items-center justify-content-between">
+                        <li class="icon-item"><a href="#" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li class="icon-item"><a href="shopping-cart-page.html" class="icon"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        <li class="icon-item menu-bar d-none"><a href="#" class="icon"><i class="fa-solid fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="searchbar d-flex align-items-center justify-content-center">
+                    <input type="search" placeholder="Search" class="" id="search-input">
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+
+        <!-- title of page start -->
+        <div class="page-title">
+            <div class="container">
+                <div class="breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0 mt-5">
+                        <li class="breadcrumb-item home"><a href="shopping-cart-page.html" class="prev-page">shopping cart</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">shipping</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="section-title">
+                    <h1 class="title">Shipping</h1>
+                </div>
+            </div>
+        </div>
+        <!-- title of page end -->
+
+
+        <!-- shipping main content start -->
+        <section class="shipping-main-content page-bottom-padding">
+            <div class="container">
+                <div class="row g-5">
+                    <div class="col-md-7 col-12 d-flex">
+                        <div class="customer-information">
+                            <form action="">
+                                <div class="row d-flex">
+                                    <div class="col-md-6 col-8">
+                                        <input type="text" class="input long" placeholder="first name">
+                                    </div>
+                                    <div class="col-md-6 col-8">
+                                        <input type="text" class="input long" placeholder="last name">
+                                    </div>
+                                </div>
+                                <div class="row d-flex">
+                                    <div class="col-md-6 col-8">
+                                        <input type="email" class="input long" placeholder="email">
+                                    </div>
+                                    <div class="col-md-6 col-8">
+                                        <input type="text" class="input long" placeholder="phone">
+                                    </div>
+                                </div>
+                                <div class="row d-flex">
+                                    <div class="col-md-6 col-8">
+                                        <input type="text" class="input long" placeholder="address">
+                                    </div>
+                                    <div class="col-md-6 col-8">
+                                        <input type="text" class="input long" placeholder="city">
+                                    </div>
+                                </div>
+                                <div class="row d-flex">
+                                    <div class="col-md-4 col-8">
+                                        <input type="text" class="input short" placeholder="postal code">
+                                    </div>
+                                    <div class="col-md-4 col-8">
+                                        <input type="text" class="input short" placeholder="province">
+                                    </div>
+                                    <div class="col-md-4 col-8">
+                                        <input type="text" class="input short" placeholder="country">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 d-flex">
+                        <div class="shipping-methods">
+                            <h2 class="sub-title pb-5">shipping method</h2>
+                            <form action="" class="row">
+                                <div class="checkboxes">
+                                    <div>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        <label for="" class="checkbox-label">Regular delivery (Free - 5 business days)</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        <label for="" class="checkbox-label">Express delivery (10$ - 3 business days)</label>
+                                    </div>
+                                    <div>
+                                        <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                        <label for="" class="checkbox-label">VIP delivery (20$ - 1 business days)</label>
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="shipping-info d-flex align-items-center justify-content-between pt-5">
+                                <p>Shipping</p>
+                                <p class="how">free</p>
+                            </div>
+                            <form action="" class="d-flex align-items-end justify-content-between pt-4">
+                                <input type="text" class="input short" placeholder="promo code">
+                                <a href="#">apply</a>
+                            </form>
+                            <div class="total-payment d-flex align-items-center justify-content-between py-5">
+                                <p>total</p>
+                                <p class="total-for-all d-flex flex-row"><span>51</span> $</p>
+                            </div>
+                            <a href="payment-page.html" class="button">continue<span>⟶</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- shipping main content end -->
+
+    </div>
+    <!-- shipping page end -->
+
+
+
+    <!-- js links -->
+    <script src="assets/js/jquery.min.js" ></script>
+    <script src="assets/js/script.js" ></script>
+</body>
+</html>

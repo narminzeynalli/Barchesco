@@ -1,0 +1,38 @@
+// catalog page style start
+html {
+    body {
+        .catalog-page {
+            // catalog section start
+            .catalog-section {
+                .options {
+                    font-size: .8rem;
+                    select {
+                        background-color: transparent;
+                        cursor: pointer;
+                        &:not(:last-child) {
+                            margin-right: 4rem;
+                        }
+                        option {
+                            background-color: $bg-color !important;
+                        } 
+                    }
+                }
+                .pagination {
+                    --bs-pagination-bg: transparent;
+                    --bs-pagination-border-color: transparent;
+                    --bs-pagination-hover-bg: transparent;
+                    --bs-pagination-hover-border-color: transparent;
+                    --bs-pagination-focus-bg: transparent
+                    --bs-pagination-active-color: #fff;
+                    --bs-pagination-active-bg: transparent;
+                    --bs-pagination-active-border-color: transparent;
+                    --bs-pagination-disabled-color: #242424;
+                    --bs-pagination-disabled-bg: transparent;
+                    --bs-pagination-disabled-border-color: transparent;
+                }
+            }
+            // catalog section end
+        }
+    }
+}
+// catalog page style end

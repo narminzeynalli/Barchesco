@@ -1,0 +1,53 @@
+// shipping page style start
+html {
+    body {
+        .shipping-page {
+            // shipping main content start
+            .shipping-main-content {
+                .sub-title {
+                    font-size: 1.5rem;
+                }
+                .customer-information {
+                    .input {
+                        padding-top: 3rem;
+                    }
+                }
+                .shipping-methods {
+                    .shipping-info {
+                        border-top: $border;
+                        font-size: .8rem;
+                        text-transform: capitalize;
+                        font-weight: 600;
+                        .how {
+                            color: $decoration-color !important;
+                        }
+                    }
+                    .total-payment {
+                        font-size: 1.5rem;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                    }
+                    form {
+                        .short {
+                            width: 12rem;
+                        }
+                        a {
+                            font-size: .7rem;
+                            text-transform: uppercase;
+                            font-weight: 600;
+                            border: 2px solid $decoration-color;
+                            padding: .7rem 2rem;
+                            &:focus {
+                                background-color: $text-color;
+                                color: $bg-color !important;
+                                border: $border;
+                            }
+                        }
+                    }
+                }
+            }
+            // shipping main content end
+        }
+    }
+}
+// shipping page style start

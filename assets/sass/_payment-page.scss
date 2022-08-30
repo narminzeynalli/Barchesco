@@ -1,0 +1,58 @@
+// payment page style start
+html {
+    body {
+        .payment-page {
+            // payment main content start
+            .payment-main-content {
+                .sub-title {
+                    font-size: 1.5rem;
+                }
+                .products {
+                    width: 30rem;
+                    .product {
+                        img {
+                            width: 10rem;
+                            height: 10rem;
+                        }
+                        .count-price {
+                            width: 15rem;
+                            .count {
+                                font-size: .8rem;
+                                font-weight: 400;
+                            }
+                            .price {
+                                font-size: .8rem;
+                                font-weight: 800;
+                            }
+                        }
+                    }
+                    
+                }
+                .shipping-info {
+                    width: 30rem;
+                    font-size: 1.2rem;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    border-top: 2px solid $decoration-color;
+                    border-bottom: 2px solid $decoration-color;
+                    padding: 2rem 0 !important;
+                    .how {
+                        color: $decoration-color !important;
+                    }
+                }
+                .total-payment {
+                    width: 30rem;
+                    font-size: 1.5rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    padding-top: 2rem;
+                }
+                .payment-methods {
+                    width: 20rem;
+                }
+            }
+            // payment main content end
+        }
+    }
+}
+// payment page style end

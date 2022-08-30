@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- favicon of page -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="assets/sass/bootstrap.min.css">
+    
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/sass/style.css">
+    
+    <!-- title -->
+    <title>Barchesco</title>
+</head>
+<body>
+    
+    <!-- shopping page start -->
+    <div class="shopping-page">
+
+        <!-- header start -->
+        <header class="header d-flex align-items-center justify-content-center">
+            <div class="container">
+                <nav class="navbar d-flex align-items-center justify-content-between">
+                    <div class="logo">
+                        <a href="#">barchesco</a>
+                    </div>
+                    <ul class="menu d-flex align-items-center justify-content-around">
+                        <li class="menu-item"><a href="index.html" class="link">about</a></li>
+                        <li class="menu-item"><a href="catalog-page.html" class="link">catalog</a></li>
+                        <li class="menu-item"><a href="index.html" class="link">collections</a></li>
+                        <li class="menu-item"><a href="#" class="link">sales</a></li>
+                    </ul>
+                    <ul class="icons d-flex align-items-center justify-content-between">
+                        <li class="icon-item"><a href="#" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li class="icon-item"><a href="shopping-cart-page.html" class="icon"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        <li class="icon-item menu-bar d-none"><a href="#" class="icon"><i class="fa-solid fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="searchbar d-flex align-items-center justify-content-center">
+                    <input type="search" placeholder="Search" class="" id="search-input">
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+
+        <!-- title of page start -->
+        <div class="page-title pb-5">
+            <div class="container">
+                <div class="breadcrumb">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0 mt-5">
+                        <li class="breadcrumb-item home"><a href="index.html" class="prev-page">Main Page</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Shopping cart</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="section-title">
+                    <h1 class="title">Shopping cart</h1>
+                </div>
+            </div>
+        </div>
+        <!-- title of page end -->
+
+        <!-- shopping table section start -->
+        <section class="shopping-table page-bottom-padding pt-5">
+            <div class="container">
+                <div class="table-heading row pb-4">
+                    <div class="col-6"></div>
+                    <div class="column-names col-4 d-flex align-items-center justify-content-between pb-2">
+                        <span>quanity</span>
+                        <span>price</span>
+                        <span>total</span>
+                    </div>
+                    <div class="col-1"></div>
+                </div>
+                <div class="table-content">
+                    <div class="table-row row d-flex align-items-center pb-4">
+                        <div class="col-lg-3 col-6 d-flex align-items-center justify-content-center">
+                            <div class="product-card">
+                                <img src="assets/img/catalog-card-img-1.jpg" alt="catalog card img">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-6">
+                            <div class="row d-flex align-items-center justify-content-between">
+                                <div class="col-lg-4 col-9 order-lg-1 order-1">
+                                    <h3 class="sub-title py-4">lillo grey vase</h3>
+                                </div>
+                                <div class="col-lg-2 col-12 order-lg-2 order-3 py-4">
+                                    <div class="select-count d-flex align-items-center">
+                                        <button class="minus-btn" data-minus-btn>-</button>
+                                        <div class="count px-3" data-quanity>1</div>
+                                        <button class="plus-btn" data-plus-btn>+</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-12 order-lg-3 px-4">
+                                    <p class="price amount"><span data-price>13</span> $</p>
+                                </div>
+                                <div class="col-lg-2 col-12 order-lg-4 order-4 px-4">
+                                    <p class="price"><span data-total-for-one>13</span> $</p>
+                                </div>
+                                <div class="col-lg-2 col-3 order-lg-5 order-2 d-flex align-items-center justify-content-end pe-5">
+                                    <i class="fa-solid fa-times close-btn"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row row d-flex align-items-center pb-4">
+                        <div class="col-lg-3 col-6 d-flex align-items-center justify-content-center">
+                            <div class="product-card">
+                                <img src="assets/img/catalog-card-img-5.jpg" alt="catalog card img">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-6">
+                            <div class="row d-flex align-items-center justify-content-between">
+                                <div class="col-lg-4 col-9 order-lg-1 order-1">
+                                    <h3 class="sub-title py-4">ivory dinner plate</h3>
+                                </div>
+                                <div class="col-lg-2 col-12 order-lg-2 order-3 py-4">
+                                    <div class="select-count d-flex align-items-center">
+                                        <button class="minus-btn" data-minus-btn>-</button>
+                                        <div class="count px-3" data-quanity>3</div>
+                                        <button class="plus-btn" data-plus-btn>+</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-12 order-lg-3 px-4">
+                                    <p class="price amount"><span data-price>9</span> $</p>
+                                </div>
+                                <div class="col-lg-2 col-12 order-lg-4 order-4 px-4">
+                                    <p class="price"><span data-total-for-one>27</span> $</p>
+                                </div>
+                                <div class="col-lg-2 col-3 order-lg-5 order-2 d-flex align-items-center justify-content-end pe-5">
+                                    <i class="fa-solid fa-times close-btn"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-row row d-flex align-items-center pb-4">
+                        <div class="col-lg-3 col-6 d-flex align-items-center justify-content-center">
+                            <div class="product-card">
+                                <img src="assets/img/catalog-card-img-7.jpg" alt="catalog card img">
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-6">
+                            <div class="row d-flex align-items-center justify-content-between">
+                                <div class="col-lg-4 col-9 order-lg-1 order-1">
+                                    <h3 class="sub-title py-4">ramona bowl</h3>
+                                </div>
+                                <div class="col-lg-2 col-12 order-lg-2 order-3 py-4">
+                                    <div class="select-count d-flex align-items-center">
+                                        <button class="minus-btn" data-minus-btn>-</button>
+                                        <div class="count px-3" data-quanity>1</div>
+                                        <button class="plus-btn" data-plus-btn>+</button>
+                                    </div>
+                                </div>
+                                <div class="col-lg-2 col-12 order-lg-3 px-4">
+                                    <p class="price amount"><span data-price>11</span> $</p>
+                                </div>
+                                <div class="col-lg-2 col-12 order-lg-4 order-4 px-4">
+                                    <p class="price"><span data-total-for-one>11</span> $</p>
+                                </div>
+                                <div class="col-lg-2 col-3 order-lg-5 order-2 d-flex align-items-center justify-content-end pe-5">
+                                    <i class="fa-solid fa-times close-btn"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5">
+                    <div class="row d-flex justify-content-end">
+                        <div class="col-lg-4 col-6">
+                            <div class="total-payment d-flex align-items-center justify-content-between pb-5">
+                                <p>total</p>
+                                <p class="total-for-all d-flex flex-row"><span data-total-for-all>51</span> $</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-end">
+                        <div class="col-lg-4 col-6">
+                            <a href="shipping-page.html" class="button">check out<span>⟶</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- shopping table section end -->
+
+    </div>
+    <!-- shopping page end -->
+
+
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- js links -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

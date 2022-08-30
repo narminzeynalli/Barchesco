@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon of page -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="assets/sass/bootstrap.min.css">
+    
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/sass/style.css">
+
+    <!-- swiper css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+    <!-- title -->
+    <title>Barchesco</title>
+</head>
+<body>
+
+    <!-- product card page start -->
+    <div class="product-card-page">
+
+        <!-- header start -->
+        <header class="header d-flex align-items-center justify-content-center">
+            <div class="container">
+                <nav class="navbar d-flex align-items-center justify-content-between">
+                    <div class="logo">
+                        <a href="#">barchesco</a>
+                    </div>
+                    <ul class="menu d-flex align-items-center justify-content-around">
+                        <li class="menu-item"><a href="#story-section" class="link">about</a></li>
+                        <li class="menu-item"><a href="catalog-page.html" class="link">catalog</a></li>
+                        <li class="menu-item"><a href="index.html" class="link">collections</a></li>
+                        <li class="menu-item"><a href="#" class="link">sales</a></li>
+                    </ul>
+                    <ul class="icons d-flex align-items-center justify-content-between">
+                        <li class="icon-item"><a href="#" class="icon"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li class="icon-item"><a href="shopping-cart-page.html" class="icon"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                        <li class="icon-item menu-bar d-none"><a href="#" class="icon"><i class="fa-solid fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="searchbar d-flex align-items-center justify-content-center">
+                    <input type="search" placeholder="Search" class="" id="search-input">
+                </div>
+            </div>
+        </header>
+        <!-- header end -->
+
+
+        <!-- product details section start -->
+        <section class="product-details-section section-padding pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="card-column col-md-6 col-12 d-flex align-items-start justify-content-center">
+                        <div class="image">
+                            <img src="assets/img/catalog-card-img-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="card-column col-md-6 col-12 d-flex align-items-center">
+                        <div class="details">
+                            <h6 class="links-title fst-italic fw-medium">ceramic</h6>
+                            <h2 class="sub-title">lillo grey vase</h2>
+                            <p class="text py-4">A coating of crackle glaze coats the vase's ribbed texture in creamy ivory. Perfect for hosting a single stem or small floral spray</p>
+                            <div class="d-flex py-3">
+                                <p class="price px-4">13 $</p>
+                                <div class="select-count d-flex align-items-center px-5">
+                                    <button class="minus-btn" data-minus-btn>-</button>
+                                    <div class="count px-3" data-quanity>1</div>
+                                    <button class="plus-btn" data-plus-btn>+</button>
+                                </div>
+                            </div>
+                            <div class="btn-div pt-4">
+                                <a href="shopping-cart-page.html" class="button">add to cart<span>⟶</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product details section start -->
+
+
+        <!-- offers section start -->
+        <section class="offers-section page-bottom-padding">
+            <div class="container">
+                <div class="section-title d-flex justify-content-center">
+                    <h1 class="title">You <span class="italic-text">may</span> also like</h1>
+                </div>
+                <div class="swiper product-slider">
+                    <div class="swiper-wrapper slides">
+                        <div class="swiper-slide slide">
+                            <a href="#" class="product-card d-flex align-items-center justify-content-center flex-column">
+                                <img src="assets/img/catalog-card-img-2.jpg" alt="catalog card img">
+                                <h3 class="card-link py-4">rhonna pot</h3>
+                                <p class="price">16 $</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <a href="#" class="product-card d-flex align-items-center justify-content-center flex-column">
+                                <img src="assets/img/catalog-card-img-3.jpg" alt="catalog card img">
+                                <h3 class="card-link py-4">kinai vase</h3>
+                                <p class="price">27 $</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <a href="#" class="product-card d-flex align-items-center justify-content-center flex-column">
+                                <img src="assets/img/catalog-card-img-4.jpg" alt="catalog card img">
+                                <h3 class="card-link py-4">ceramic fruit bowl</h3>
+                                <p class="price">15 $</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <a href="#" class="product-card d-flex align-items-center justify-content-center flex-column">
+                                <img src="assets/img/catalog-card-img-5.jpg" alt="catalog card img">
+                                <h3 class="card-link py-4">ivory dinner plate</h3>
+                                <p class="price">9 $</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <a href="#" class="product-card d-flex align-items-center justify-content-center flex-column">
+                                <img src="assets/img/catalog-card-img-6.jpg" alt="catalog card img">
+                                <h3 class="card-link py-4">keta bowl white</h3>
+                                <p class="price">17 $</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <a href="#" class="product-card d-flex align-items-center justify-content-center flex-column">
+                                <img src="assets/img/catalog-card-img-7.jpg" alt="catalog card img">
+                                <h3 class="card-link py-4">ramona bowl</h3>
+                                <p class="price">11 $</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <a href="#" class="product-card d-flex align-items-center justify-content-center flex-column">
+                                <img src="assets/img/catalog-card-img-8.jpg" alt="catalog card img">
+                                <h3 class="card-link py-4">pomona white mug</h3>
+                                <p class="price">7  $</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <a href="#" class="product-card d-flex align-items-center justify-content-center flex-column">
+                                <img src="assets/img/catalog-card-img-9.jpg" alt="catalog card img">
+                                <h3 class="card-link py-4">seashell bowl</h3>
+                                <p class="price">15  $</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide slide">
+                            <a href="#" class="product-card d-flex align-items-center justify-content-center flex-column">
+                                <img src="assets/img/catalog-card-img-1.jpg" alt="catalog card img">
+                                <h3 class="card-link py-4">lillo grey vase</h3>
+                                <p class="price">13  $</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next slide-button">⟶</div>
+                    <div class="swiper-button-prev slide-button">⟵</div>
+                </div>
+            </div>
+        </section>
+        <!-- offers section start -->
+
+    </div>
+    <!-- product card page end -->
+
+
+
+    <!-- swiper js link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" ></script>
+
+    <!-- js links -->
+    <script src="assets/js/jquery.min.js" ></script>
+    <script src="assets/js/script.js" ></script>
+</body>
+</html>

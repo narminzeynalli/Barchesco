@@ -1,0 +1,356 @@
+// common base styles start
+// POV: these styles are shared by more than one element
+
+* {
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	transition: all .3s ease;
+    object-fit: cover;
+    color: $text-color !important;
+}
+
+// ---------------------------------------
+// common html, body, i style
+// ---------------------------------------
+html {
+	overflow-x: hidden;
+    font-family: $text-font-family;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: $bg-color;
+}
+i {
+    cursor: pointer;
+}
+
+// ---------------------------------------
+// main paddings
+// ---------------------------------------
+.section-padding {
+    padding-bottom: 12rem;
+}
+.page-bottom-padding {
+    padding-bottom: 6rem;  
+}
+
+// ---------------------------------------
+// logo style
+// ---------------------------------------
+.logo {
+    a {
+        font-size: 1.5rem;
+        font-family: $header-font-family;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+// ---------------------------------------
+// header style
+// ---------------------------------------
+.header {
+    min-height: 10vh;
+    padding: 2rem 0;
+    .navbar {
+        .logo {
+            width: 10%;
+        }
+        .menu {
+            width: 50%;
+        }
+        .icons {
+            width: 10%;
+            .icon-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .icon {
+                    i {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+    .searchbar {
+        input[type=search] {
+            display: none;
+            margin-top: 1rem;
+            width: 50%;
+            height: 3rem;
+            background-color: $bg-color;
+            border: $border;
+            padding: 0 1rem;
+            &::placeholder {
+                color: $text-color;
+            }
+            &::content {
+                display: none;
+            }
+        }
+    }
+}
+
+// ---------------------------------------
+// section title style
+// ---------------------------------------
+.section-title {
+    .title {
+        font-size: 4rem;
+        font-weight: 300;
+        font-family: $header-font-family;
+        padding-bottom: 4rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-title {
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// ---------------------------------------
+// page title style
+// ---------------------------------------
+.page-title {
+    .breadcrumb {
+        text-transform: uppercase;
+        font-size: .6rem;
+        .prev-page {
+            color: $decoration-color !important;
+        }
+    }
+    .section-title {
+        .title {
+            padding: 0 0 2rem;
+            position: relative;
+            line-height: 1;
+            // border-bottom: $border;
+            // margin-right: 60%;
+            &::before {
+                content: '';
+                width: 50%;
+                height: 2px;
+                background-color: $text-color;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+// ---------------------------------------
+// subtitle style
+// ---------------------------------------
+.sub-title {
+    font-size: 2rem;
+    font-family: $header-font-family;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+// ---------------------------------------
+// link title style
+// ---------------------------------------
+.links-title {
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    padding-bottom: 1rem;
+}
+
+// ---------------------------------------
+// link style
+// ---------------------------------------
+.link {
+    font-size: .8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    padding: .2rem 0;
+    &::before {
+        content: '';
+        width: 0;
+        height: 1px;
+        background-color: $text-color;
+        position: absolute;
+        bottom: 0;
+        transition: width .5s ease;
+    }
+    &:hover::before {
+        width: 100%;
+    }
+    &:focus::before {
+        width: 100%;
+    }
+    &.active::before {
+        width: 100%;
+    }
+}
+.card-link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-family: $header-font-family;
+    font-weight: 300;
+}
+
+// ---------------------------------------
+// product card style
+// ---------------------------------------
+.product-card {
+    img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .price {
+        font-weight: 600;
+    }
+}
+.minus-btn, .plus-btn, .count {
+    background-color: transparent;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.price {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+// ---------------------------------------
+// text style
+// ---------------------------------------
+.text {
+    font-size: 1.1rem;
+    line-height: 1.2;
+    font-weight: 500;
+    width: 25rem;
+    padding: 3rem 0;
+}
+@media screen and (max-width: 768px) {
+    .text {
+        width: 35rem;
+        text-align: center;
+    }
+} 
+
+// ---------------------------------------
+// input style
+// ---------------------------------------
+.input {
+    width: 100%;
+    margin-right: 2rem;
+    font-size: .7rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-bottom: 2px solid $decoration-color;
+    padding: 1rem 5rem 1rem 0;
+    color: $text-color !important;
+    &::placeholder {
+        text-transform: uppercase;
+        color: $decoration-color !important;
+    }
+}
+
+// ---------------------------------------
+// checkbox style
+// ---------------------------------------
+.checkbox-label {
+    font-size: .8rem;
+    position: relative;
+    padding: 0 0 3rem .5rem;
+}
+.form-check-input[type=checkbox] {
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid #242424;
+    cursor: pointer;
+}
+.form-check-input:checked[type=checkbox] {
+    background-color: #242424;
+    border: 1px solid #242424;
+}
+.form-check-input[type=checkbox]:indeterminate {
+    border-radius: 0;
+    background-color: transparent;
+    border: 1px solid #242424;
+    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e"); */
+}
+.form-check-input:focus {
+    border-color: 1px solid #242424;
+    outline: 0;
+    box-shadow: 0 0 0 transparent;
+}
+
+// ---------------------------------------
+// button style
+// ---------------------------------------
+.button {
+    width: 17rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: $border;
+    padding: 1rem;
+    span {
+        font-size: 2rem;
+        padding-left: 5rem;
+    }
+    &:hover, &:hover span {
+        transform: scale(.8);
+    }
+    &:focus {
+        background-color: $text-color;
+        color: $bg-color !important;
+    }
+    &:focus span {
+        color: $bg-color !important;
+    }
+}
+
+// ---------------------------------------
+// italic text style
+// ---------------------------------------
+.italic-text {
+    font-weight: 400 !important;
+    font-style: italic;
+}
+
+// ---------------------------------------
+// slider button style
+// ---------------------------------------
+.slide-button::after {
+    display: none;
+}
+.slide-button {
+    font-size: 2rem;
+    width: 4rem;
+    &::before {
+        content: '';
+        width: 4rem;
+        height: 4rem;
+        border: $border;
+        border-radius: 50%;
+        position: absolute;
+        transform: translate(-50%, 0);
+    }
+}
+.swiper-button-prev {
+    &::before {
+        transform: translate(50%, 0);
+    }
+}
+
+// ---------------------------------------
+// selection style
+// ---------------------------------------
+::selection {
+    background-color: $text-color;
+    color: $bg-color !important;
+}
